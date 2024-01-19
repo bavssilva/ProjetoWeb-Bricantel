@@ -1,0 +1,12 @@
+extends ../templates/templateproduto
+
+block variables
+  - var title = "Hat"
+
+block content
+  .container-cinzeiro
+    include ../organisms/produto
+    div
+      +produto({ imagePath: 'assets/images/gridproduct/catcz/catcz5.png', title: 'Hat', description: 'O cinzeiro de rua é uma peça essencial de mobiliário urbano projetada para oferecer uma solução prática e esteticamente agradável para o descarte seguro de cinzas e bitucas de cigarro em espaços públicos. Confeccionado com materiais duráveis e resistentes às condições climáticas, este cinzeiro é uma adição discreta e funcional às áreas urbanas, contribuindo para a manutenção da limpeza e beleza dos espaços ao ar livre.'
+      , link: 'cinzeiro5.html' })
+

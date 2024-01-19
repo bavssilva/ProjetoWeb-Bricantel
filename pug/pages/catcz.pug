@@ -1,0 +1,18 @@
+extends ../templates/templatecategorias
+
+block variables
+  - var title = "Cinzeiros"
+
+block content
+  .container
+    include ../molecules/molecule
+    div
+      +molecule({ imagePath: 'assets/images/gridproduct/catcz/catcz4.png', title: 'Square', link:'cinzeiro4.html' })
+      +molecule({ imagePath: 'assets/images/gridproduct/catcz/catcz5.png', title: 'Hat' , link:'cinzeiro5.html'})
+      +molecule({ imagePath: 'assets/images/gridproduct/catcz/catcz6.png', title: 'Kody' , link:'cinzeiro6.html'})
+
+    // Segunda linha
+    div
+      +molecule({ imagePath: 'assets/images/gridproduct/catcz/catcz1.png', title: 'Meia-Lua' , link:'cinzeiro1.html'})
+      +molecule({ imagePath: 'assets/images/gridproduct/catcz/catcz2.png', title: 'Tube' , link:'cinzeiro2.html'})
+      +molecule({ imagePath: 'assets/images/gridproduct/catcz/catcz3.png', title: 'Lupin', link:'cinzeiro3.html' })

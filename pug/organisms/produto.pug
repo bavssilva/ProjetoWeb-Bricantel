@@ -1,0 +1,11 @@
+mixin produto(data)
+  .produto
+    a.produto-link(href=data.link || '#')
+      .conteudo
+        img(src=(data.imagePath || 'caminho/para/imagem-padrao.jpg'), alt='Imagem do Produto')
+        .detalhes
+          h2(style="text-align: center;")= data.title
+      p.descricao= data.description || 'Descrição do produto aqui'
+
+      include ../atoms/adicionar
+      

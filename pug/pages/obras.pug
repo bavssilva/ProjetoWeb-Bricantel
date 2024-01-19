@@ -1,0 +1,35 @@
+extends ../templates/templatecategorias
+
+block variables
+  - var title = "Obras Recentes"
+
+block content
+  section#obras  
+    include ../organisms/organismo-obras
+    .organismo-obras
+      // Primeira Obra
+      .obra-item
+        .obra-img
+          img(src='assets/images/obras/eiras.jpg', alt='Obra Recente Eiras')
+        .texto-imagem
+          h2 Parque Infantil de Eiras
+          #texto-frase
+            | Eiras tem o primeiro parque infantil completamente inclusivo de Coimbra. Trata-se de um projeto de remodelação e requalificação do Parque Infantil das Eiras que é financiado pela Câmara Municipal de Coimbra e realizado com equipamentos da BriCANTEL.
+
+      // Segunda Obra
+      .obra-item.second-layout
+        .texto-imagem
+          h2 O Jardim do bacalhau Chaves
+          #texto-frase
+            | O Jardim do Bacalhau (Chaves ) data da década de 30 e sofreu várias obras de remodelação. Antes chamava-se Terreiro do Cavaleiro, mas deixou esse nome para Jardim do Bacalhau, embora muitos ainda lhe chamem Cavalaria.
+        .obra-img
+          img(src='assets/images/obras/chaves.png', alt='Obra Recente Chaves')
+
+      // Terceira Obra
+      .obra-item
+        .obra-img
+          img(src='assets/images/obras/vilamea.png', alt='Obra Recente Vila Meã')
+        .texto-imagem
+          h2 Vila Meã
+          #texto-frase
+            | A freguesia de Vila Meã, no concelho de Vila Nova de Cerveira (distrito de Viana do Castelo ), já tem novos jogos infantis fornecidos pela BriCANTEL, para que as crianças 🧒👦 possam começar o ano de 2023 de forma divertida.

@@ -1,0 +1,30 @@
+section#slide
+section.carousel(aria-label='Gallery')
+  ol.carousel__viewport
+    li#carousel__slide1.carousel__slide(tabindex='0')
+      .carousel__snapper
+      .slide-content
+        img(src=`${directory}assets/images/slide/slideshow1.png`, alt='Slide 1')
+    li#carousel__slide2.carousel__slide(tabindex='0')
+      .carousel__snapper
+      .slide-content
+        img(src=`${directory}assets/images/slide/slideshow2.png`, alt='Slide 2')
+    li#carousel__slide3.carousel__slide(tabindex='0')
+      .carousel__snapper
+      .slide-content
+        img(src=`${directory}assets/images/slide/slideshow3.png`, alt='Slide 3')
+    li#carousel__slide4.carousel__slide(tabindex='0')
+      .carousel__snapper
+      .slide-content
+        img(src=`${directory}assets/images/slide/slideshow4.png`, alt='Slide 4')
+      
+  aside.carousel__navigation
+    ol.carousel__navigation-list
+      li.carousel__navigation-item
+        a.carousel__navigation-button(href='#carousel__slide1') 
+      li.carousel__navigation-item
+        a.carousel__navigation-button(href='#carousel__slide2') 
+      li.carousel__navigation-item
+        a.carousel__navigation-button(href='#carousel__slide3') 
+      li.carousel__navigation-item
+        a.carousel__navigation-button(href='#carousel__slide4') 

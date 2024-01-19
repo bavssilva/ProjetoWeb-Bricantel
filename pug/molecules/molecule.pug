@@ -1,0 +1,5 @@
+mixin molecule(data)
+  .molecule
+    a.molecule-link(href=data.link || 'index.html') 
+      img(src=(data.imagePath || 'assets/images/gridproduct/grid1.png'), alt='IMG')
+      h2(style="text-align: center;")= data.title

@@ -1,0 +1,20 @@
+extends ../templates/templatecategorias
+
+block variables
+  - var title = "Categorias"
+
+block content
+  .container
+    include ../molecules/molecule
+    div
+      
+      +molecule({ imagePath: 'assets/images/gridproduct/catmb-cinzeiros.png', title: 'Cinzeiros', link: 'catcz.html' })
+      +molecule({ imagePath: 'assets/images/gridproduct/catmb-floreiras.png', title: 'Floreiras' })
+      +molecule({ imagePath: 'assets/images/gridproduct/catmb-grelhas.png', title: 'Grelhas' })
+
+    // Segunda linha
+    div
+      +molecule({ imagePath: 'assets/images/gridproduct/catmb-bancos.png', title: 'Bancos' })
+      +molecule({ imagePath: 'assets/images/gridproduct/catmb-mesas.png', title: 'Mesas' })
+      +molecule({ imagePath: 'assets/images/gridproduct/catmb-papeleiras.png', title: 'Papeleiras' })
+
